@@ -1,0 +1,70 @@
+#frame{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border: 10px solid gray;
+    border-radius: 100%;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    z-index: 300;
+}
+#frame>div{
+    width: calc(100% - 20px);
+    aspect-ratio: 1/1;
+    border: 10px solid red;
+    border-radius: 100%;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+section{
+    position: absolute;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+section>div{
+    width: 180px;
+    aspect-ratio: 1/1;
+    background-color: orange;
+    border-radius: 100%;
+    /*margin-top:245px ;
+    margin-bottom: 245px;*/
+
+    margin: 245px 0;
+    position: relative;
+
+}
+
+section>div:first-child{
+    background-color: purple;
+}
+section>div:nth-child(2){
+    background-color: dodgerblue;
+}
+section>div:last-child{
+    background-color: darkred;
+}
+
+section>div>span{
+    position: absolute;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
